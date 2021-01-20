@@ -1,0 +1,12 @@
+ <script>
+    function setREM(){
+      var uiW=375;
+      var winW=document.documentElement.clientWidth;
+      var rate=winW/uiW;
+      document.getElementsByTagName('html')[0].style.fontSize=rate*100+'px'
+    }
+    setREM();
+    window.onresize=function(){
+      setREM();
+    }
+  </script>
